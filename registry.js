@@ -3,6 +3,15 @@
 // 旧版を更新版で置き換えた場合は、旧版側に supersededBy: "<新版id>" を付ける。
 window.REPORTS = [
   {
+    id: "llm-kaibou-20260820",
+    title: "LLM解剖｜ChatGPTとClaudeはどう作られているのか",
+    url: "https://storage.cloud.google.com/n8n_file_upload/llm-kaibou.html",
+    date: "2026-08-20",
+    project: "学習 / AI",
+    filename: "llm-kaibou.html",
+    note: "Xで回ってきたStanford講義(2:34:52の転載mp4)の中身を日本語で読める形に再構成した初心者向け解説。全11セクション。①文字をトークンに割る(BPEのマージを10回まで手で回せるデモ付き)②トークンを数百〜数千次元のベクトルに変換③Attentionが文中のどの語から情報を引くかを実測値ベースで色分け表示④NLL損失で「次の1トークン」を当てる訓練⑤温度とtop-pを動かすと出力がどう変わるかのスライダー(温度を下げると『晴れ』しか出ず単調になる挙動が見える)⑥事前学習のあとの指示チューニングとRLHFで人格が分かれる、まで。動画の逐語訳ではなく同内容の再構成。元ネタはStanford CS229 Building LLMs(9vM4p9NN0Ts / 1:44:31 / 手動英語字幕あり→日本語自動翻訳可)とCS336プレイリスト。",
+  },
+  {
     id: "ensor-is-revival-recording-rules-20260819",
     title: "掘り起こし架電｜記録ルール（IS向け・1枚もの）",
     url: "https://storage.cloud.google.com/n8n_file_upload/ensor-is-revival-recording-rules.html",
