@@ -3,6 +3,15 @@
 // 旧版を更新版で置き換えた場合は、旧版側に supersededBy: "<新版id>" を付ける。
 window.REPORTS = [
   {
+    id: "rice-prioritization-is-20260824",
+    title: "RICEで決める、やる順番 — ISでの使い方",
+    url: "https://storage.cloud.google.com/n8n_file_upload/rice-prioritization-is-20260824.html",
+    date: "2026-08-24",
+    project: "学習 / 意思決定",
+    filename: "rice-prioritization-is-20260824.html",
+    note: "RICE(Reach×Impact×Confidence÷Effort)で施策の優先順位を決める方法を、ENSOR ISリソースモデル(2026-07-27確定パラメータ)の実数値だけで解説した全10章。①式の構造SVG(分子=得られるもの/分母=払うもの、スコアの絶対値には意味がなく同じ表の中でしか比較できないことを明記)②優先順位が壊れる2つの型(直近に痛かった案件=Impactだけ見てReachを見ていない/軽いものから片付く=Effortだけ見て分子を見ていない)③ISの言葉への翻訳表(Reach=今月増えるアポ数に固定、Impact=アポ→Bアポ80%からの上下、Confidence=数字の出所、Effort=運用コスト込みの人月)④施策6本の計算表(R/I/C/Eを直接書き換えるとスコア・順位・バーがその場で更新。問い合わせ初速30.6/v5.1定着25.2/記録ルール24.3/掘り起こし付け替え20.8/追いかけ改善12.6/4人目採用3.1)⑤直感順とRICE順のバンプチャートSVG(4人目採用が1位→6位、記録ルール8秒が6位→3位)⑥Reachの単位という罠(記録ルールを『触る件数2,400件』で採点すると5,400点で断トツ1位、『増えるアポ2.7件』なら24.3で3位。R×Iの答えに単位を付けられない表は壊れている)⑦壊れ方5つ(提案者が自分でImpactをつける/Confidenceに意気込みを書く/Effortが作る手間だけ/Reachの単位が行ごとに違う/スコア順をそのまま実行順にする)⑧RICEが答えない4領域(リードタイム・締切・依存関係・学習価値。採用は順位6位でも着手は今日)⑨月初30分の手順7ステップ⑩Impact5段とConfidence6段のルーブリック＋ICE/WSJFとの違い。使った実測値は掘り起こし0.270アポ/h・展示会追いかけ0.140・Bアポ100に必要346h・3名でも0.26人月不足。改善幅とコネクト率の仮置きは本文で明示しConfidenceに反映。藍色インク・ウォッシュ。",
+  },
+  {
     id: "llm-kaibou-20260820",
     title: "LLM解剖｜ChatGPTとClaudeはどう作られているのか",
     url: "https://storage.cloud.google.com/n8n_file_upload/llm-kaibou.html",
