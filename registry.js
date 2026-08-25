@@ -3,6 +3,24 @@
 // 旧版を更新版で置き換えた場合は、旧版側に supersededBy: "<新版id>" を付ける。
 window.REPORTS = [
   {
+    id: "ensor-bigquery-explainer-20260825",
+    title: "BigQueryという置き場所",
+    url: "https://storage.cloud.google.com/n8n_file_upload/ensor-bigquery-explainer-20260825.html",
+    date: "2026-08-25",
+    project: "ENSOR / IS",
+    filename: "ensor-bigquery-explainer-20260825.html",
+    note: "商談・架電で「BigQueryって何？」「うちの楽天とAmazonも繋がるの？」と聞かれたときに、その場で答えるための一枚。①BigQueryはGoogleのデータ倉庫、違いは置ける量と数える速さ(Excel104万行/スプレッドシート1000万セル vs 数億行を数秒)②表計算との7項目比較表③データの流れSVG(媒体→BigQueryのBronze/Silver/Gold→ENSOR Brain/分析レポート/クリエイティブ生成。実線=設定だけ、破線=作り込み要で線種を分けた)④ENSORとの関係2パターン(既存BigQueryへ直結は2026/06/29から、無くても標準5媒体で開始可)⑤本題の接続可否表(GA4とGoogle広告は公式の直行便あり数クリック/Meta・TikTok・LINEヤフーはENSORで完結/Amazonは公式直行便なしでS3経由かAMC/楽天は専用コネクタなしでRMS WebAPIかCSV、利用申請と独自認証が要る)＋楽天/Amazon/標準5媒体のタブ⑥費用(月1TiBクエリ無料、超過$6.25/TiB、保管$0.02/GB。課金は置いた量でなく読んだ量)⑦そのまま言える30秒回答5本⑧言い切ってはいけないこと4件(何でも繋がります/だいたい2週間/費用はほとんど/楽天の実績あります)。藍色インク・ウォッシュ。",
+  },
+  {
+    id: "b-apo-jisshi-shukei-20260824",
+    title: "Bアポ実施数・リスケ率を担当者ごとに出すシート",
+    url: "https://storage.cloud.google.com/n8n_file_upload/b-apo-jisshi-shukei-20260824.html",
+    date: "2026-08-24",
+    project: "ENSOR / IS",
+    filename: "b-apo-jisshi-shukei-20260824.html",
+    note: "IS/FS案件シートを元に、Bアポを獲得月(F列)ではなく実施日(J列)ベースで担当者7名(北村/入鹿/草本/吉田/神原/松藤/堀江)に分解する集計タブの構築手順。①使う5列の対応表(E=アポ獲得者/H=ランク判定/I=初回アポ結果/J=初回アポ日/AC=サービス)とSVGフロー図②名前付き範囲5本(担当・ランク・結果・実施日・サービス)を先に作り、列ズレの修正を1箇所に閉じる③セル構成をスプレッドシート風グリッドで図示(B3/B4=期間入力、9行目=見出し、10〜16行目=7名、17行目=警報、19/21行目=検算)④貼るだけのCOUNTIFS 8本＋コピーボタン。実施は白リスト(パイプ/追いかけ/リサイクル/同会社の他部署と連動)で数え、リスケ/キャンセル/ドタキャンを別列に分ける⑤リスケ率の分母は実施数ではなく設定数(飛んだ分が分母から消えて率が低く出るため)⑥E列が自由記述なので\"*北村*\"のワイルドカードで表記ゆれを吸収し、17行目で拾えなかった件数を可視化⑦検算2本(文字列日付の混入数、期間内の獲得者名を件数つきで全出し)⑧G列その他=引き算なので辻褄は常に合う、見るのは0かどうか。既存Sアポ集計(F列基準)とは月またぎで数字が合わない旨も明記。藍色インク・ウォッシュ。",
+  },
+  {
     id: "rice-prioritization-is-20260824",
     title: "RICEで決める、やる順番 — ISでの使い方",
     url: "https://storage.cloud.google.com/n8n_file_upload/rice-prioritization-is-20260824.html",
