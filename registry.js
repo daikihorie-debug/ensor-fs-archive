@@ -3,6 +3,34 @@
 // 旧版を更新版で置き換えた場合は、旧版側に supersededBy: "<新版id>" を付ける。
 window.REPORTS = [
   {
+    id: "gsheet-ai-mechanism-20260914",
+    title: "スプレッドシートとAIのあいだの仕組み",
+    url: "https://storage.cloud.google.com/n8n_file_upload/gsheet-ai-mechanism-2026-09-14.html",
+    date: "2026-09-14",
+    project: "gsheet-ai ・ Claude Code運用",
+    filename: "gsheet-ai-mechanism-2026-09-14.html",
+    note: "プログラミング初心者の堀江向けに、Claude Codeにスプレッドシートを読ませつつGoogleの合言葉と通行証は読ませない仕組みを、~/projects/gsheet-ai の read_sheet.py と ~/.claude/hooks/vault-guard.py のコードどおりに図解した一枚。全8章。①登場人物4つ(Googleのシート/ログイン窓口、Mac上の read_sheet.py、Claude Code)の位置関係SVG、AIと秘密2ファイルの間の壁②鍵3種の比較表(client id=名札で公開可/client secret=合言葉でなりすましアプリの材料/token.json=通行証で本人になりすませる、権限は spreadsheets と drive.readonly)③初回のOAuthシーケンス9手順SVG(.env読む、ブラウザ、許可、localhost経由の許可コード、合言葉と交換、token.json保存)と connect() の分岐1行④2回目以降の流れとAIが見る側/見ない側の境界線SVG(標準出力は見える、.env/token.json/Googleとの通信/ブラウザは見えない)⑤2層の検問(層1=settings.json permissions.deny を Read/Write/Edit/Grep × ~/** と //** と ** の3書式で列挙、層2=PreToolUse hook がパス・検索語・Bashコマンド文字列を正規表現で見て AI の判断と無関係に deny)、実測5パターン表(python open()=hook拒否/printenv=hook拒否/Read .env=deny拒否/ls git status=通る/read_sheet.py実行=通る)、限界1段落(名前と定型で見るだけ、AIが自分で書いたスクリプト内で開く経路は通る、誤検出もある)⑥何が外に出て何が出ていないか(会話に乗った=client id・使い捨て認可URL・シート20件の名前とID、乗っていない=client secret・token.json。通信の行き先SVG=GoogleのAPIとAnthropicの会話のみ。token.jsonはMacごと盗まれると436件のシートを読み書きできる通行証、Gmail/Drive書き込みは含まない、myaccount.google.com/permissions で取り消す3手順表、読ませてよい/読ませない線引き表8行、秘密は .env 方式で1か所に集めhook/denyの対象名に揃える原則とn8nトークンの平文保管も同じ扱いにすべき旨)⑦.gitignoreとの違い(守る相手・止める操作・止めない操作の3行比較)⑧エラー4種の読み方(403 permission denied=共有忘れ/redirect_uri_mismatch=クライアント種別がウェブ/access_denied=テストユーザー未登録/API has not been used=API未有効化)。秘密の値はページに一切書かず伏せ字のみ。藍色インク・ウォッシュ、図はすべてinline SVG、外部JSなし。",
+  },
+  {
+    id: "genjo-haaku-v2-20260902",
+    title: "現状把握 総点検 2026-09",
+    url: "https://storage.cloud.google.com/n8n_file_upload/genjo-haaku-v2-20260902.html",
+    date: "2026-09-02",
+    project: "ENSOR / IS ・ 自己成長",
+    filename: "genjo-haaku-v2-20260902.html",
+    note: "v1(genjo-haaku-20260902)を3倍に拡張した全12章。定義と5条件はそのままに、基準どおりに9月のISを実際に把握してみせる実演を足した版。①9月度逆算(MRR400万→受注12件→Sアポ66→Bアポ120、150件要求=受注率15%据え置きの検算と一致)と8/31現在地(Bアポ66/120・着地見込み96件▲24・アウトバウンド切替条件該当)②チャネル別1,153コールの実測vs基準(セミナー=コネクト率9.0%が律速で率26.8%は基準超え/掘り起こし=率6.0%が主因かつ8/26以降ほぼ停止/展示会追いかけ=母数29で保留/問い合わせ=問題なし)③○×6項目の58本ロールアップ(締めの問い×70%・切り返し×67%・正解手×77%・惜しい失注8本・課題発言129個中拾い62)④チャネル別タブ(展示会=来場目的スキップ8本、セミナー=トークでなく接触の問題、掘り起こし=v5.1台本と弾は在庫ありで発射側の×、NG種別=今じゃない16件最多×正解手×77%の組み合わせ)⑤開示レベルL2 36/L1 18/L0 4と断り105個の建前/本物判定⑥変数の重み表(掘り起こし率+9.5件/セミナーコネクト率+5件/惜しい失注+数件/展示会+1.8件/冒頭10秒=未知数で観測が先、弱点も明記)⑦死角=コネクト143件と解析58本の間の85件が未観測⑧10日の行動計画(5分チェック文面、9/3観測、9/5にv1で○×、時期NG在庫化の記録ルール提案)。藍色インク・ウォッシュ、チャネル別はCSSタブ。",
+  },
+  {
+    id: "genjo-haaku-20260902",
+    supersededBy: "genjo-haaku-v2-20260902",
+    title: "現状把握の基準と、次の10日の動き",
+    url: "https://storage.cloud.google.com/n8n_file_upload/genjo-haaku-20260902.html",
+    date: "2026-09-02",
+    project: "ENSOR / IS ・ 自己成長",
+    filename: "genjo-haaku-20260902.html",
+    note: "2026-09-01の代表1on1の宿題「現状把握とはどういう状態まで持っていけたらいいか、自分の考えを持つ」への回答一枚。①完了の定義=その一枚を見た人が録音を聞かずに同じボトルネックを指せる状態、○×判定できる5条件(ゴール先置き/ギャップ1数字/段階別層別/一次情報の原文3つ/変数の重み)＋禁止則(打ち手が1行でもあれば未完)②フレームワーク採否4対4(採用: 解像度の4視点・空雨傘・三現主義・TOC/不採用: 3C・As-Is To-Be・5W2H単独・なぜなぜ単独、理由付き)③電話の8段分解(粒度原則=打ち手が1つに決まり通過率か○×で測れる最小単位)とSVGファネル④call-analysis解析60本のdropped_at実集計(落ち46本: 刺し12+打診10で半分、来場目的スキップ8)⑤死角の発見=冒頭10秒は3分未満通話が解析対象外のため観測ゼロ、代表の名指し箇所がパイプラインの外にある⑥60分プロトコル(10分基準線/30分一次情報=3分未満10本/10分層別と重み/10分セルフチェック)⑦10日の行動計画(9/2代表へ5分チェック依頼のSlack文面付き、9/3-4で60分実行、9/5にv1で○×、9/8週に重み1位のみ打ち手化、やらないこと2件明記)。Gong 9万本(冒頭パターン破り6.6倍・話す割合55:45、伝聞)とresource-model正典の数字を出所付きで併記。藍色インク・ウォッシュ。",
+  },
+  {
     id: "ensor-bigquery-explainer-20260825",
     title: "BigQueryという置き場所",
     url: "https://storage.cloud.google.com/n8n_file_upload/ensor-bigquery-explainer-20260825.html",
