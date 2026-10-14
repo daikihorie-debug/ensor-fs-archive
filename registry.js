@@ -3,6 +3,15 @@
 // 旧版を更新版で置き換えた場合は、旧版側に supersededBy: "<新版id>" を付ける。
 window.REPORTS = [
   {
+    id: "fs-objection-verbatim-20261014",
+    title: "FSアウト返し集（文字起こしそのまま）",
+    url: "https://storage.cloud.google.com/n8n_file_upload/fs-objection-verbatim-20261014.html",
+    date: "2026-10-14",
+    project: "ENSOR / FS",
+    filename: "fs-objection-verbatim-20261014.html",
+    note: "初回商談で相手が口にした断りや懸念と、FSがその場でどう返したかを、文字起こしの文面を変えずにカテゴリ別に並べた1枚。顧客の発話は藍、FSの返しは朱の引用ブロック。ローカルは 30_Sales/04_ナレッジ/261014_3_FSアウト返し集_文字起こしそのまま.html（正本は同名.md）。社内限定",
+  },
+  {
     id: "fs-hearing-map-4axes-20261014",
     title: "FSヒアリング順序マップ v2（アイスブレイク、ヒアリング、クロージング）",
     url: "https://storage.cloud.google.com/n8n_file_upload/fs-hearing-map-4axes-20261014.html",
