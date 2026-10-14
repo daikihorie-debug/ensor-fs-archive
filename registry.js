@@ -3,6 +3,33 @@
 // 旧版を更新版で置き換えた場合は、旧版側に supersededBy: "<新版id>" を付ける。
 window.REPORTS = [
   {
+    id: "fs-hearing-map-daiso-kambara-20261014",
+    title: "FSヒアリング地図 大創産業 神原が挟んだ質問",
+    url: "https://storage.cloud.google.com/n8n_file_upload/fs-hearing-map-daiso-kambara-20261014.html",
+    date: "2026-10-14",
+    project: "ENSOR / FS",
+    filename: "fs-hearing-map-daiso-kambara-20261014.html",
+    note: "2026-10-13 株式会社大創産業(山田様、DX企画課)初回商談のNotta文字起こしから、堀江のヒアリング(02:49-16:47)が終わったあと神原が挟んだ8問(17:04-28:11)を抽出し、別企業でも使える見出しに言い換えて時系列で並べた1枚。各問いに実際の言い回し、山田様の回答要旨、狙い1行。①堀江の9問の圧縮表②神原の8問カード(事前調査と管轄部署の切り分け/制作の担い手/内外比率と月間本数/工程分担/リードタイム/増産か時短かとチーム方針/工程別ボトルネック/ガイドライン遵守の仮説提示と橋渡し)③堀江に抜けていた8項目と次回の聞き方④話者判定の根拠と保留1箇所(46:33のブランドチェック質問)。Nottaの話者ラベルが崩れていたため内容で判定。和紙地に明朝見出し、神原は朱、堀江は灰。会社紹介、デモ、クロージングは対象外。ローカルは 30_Sales/04_ナレッジ/261014_1_FSヒアリング地図_大創産業_神原質問.html と同名.md",
+  },
+  {
+    id: "btob-top-sales-ensor-fs-20260918",
+    title: "BtoBトップセールスの行動指針 ENSOR FS版",
+    url: "https://storage.cloud.google.com/n8n_file_upload/260918_1_BtoB%E3%83%88%E3%83%83%E3%83%97%E3%82%BB%E3%83%BC%E3%83%AB%E3%82%B9%E8%A1%8C%E5%8B%95%E6%8C%87%E9%87%9D_ENSOR_FS%E7%89%88.html",
+    date: "2026-09-18",
+    project: "ENSOR / FS",
+    filename: "260918_1_BtoBトップセールス行動指針_ENSOR_FS版.html",
+    note: "SPIN、チャレンジャー、JOLT、MEDDPICC、Gartner、Gong、Salesforce公開資料、無敗営業ほかを調べ、トップセールスの観点を7つに畳んでENSORのFS商談60分に当てはめた学習レポート。①数字カード6枚②商談の進行と買い手の状態に方法論を置いたSVG③方法論ごとの根拠、発見、初心者の失敗(7タブ)④7つの観点(根拠、明日やること、ENSORでの言い方。先にやるのは『なぜ今』と期日)⑤60分の時間配分への配置⑥ENSOR版のSPIN質問、見方を持ち込む6手、汎用AIと比べられたとき、JOLT⑦Salesforceの8フェーズ×ヨミ確度×MEDDPICCの対応表⑧商談後の自己点検7項目と4週間の練習⑨出典。数字には一次、二次、社内のタグ。ENSORグリーン基調。ローカルは 30_Sales/04_ナレッジ/。調査メモ全文は ~/.claude/knowledge/sales-methodology/",
+  },
+  {
+    id: "ensor-is-seminar-aio-talk-v02",
+    title: "セミナーアプローチトーク SEO/AIO編 v0.2",
+    url: "https://storage.cloud.google.com/n8n_file_upload/ensor-is-seminar-aio-talk-v02.html",
+    date: "2026-09-17",
+    project: "ENSOR / IS",
+    filename: "ensor-is-seminar-aio-talk-v02.html",
+    note: "AI検索セミナー(検索1位でもクリック率15%から9%)の参加者へ架電するためのトーク。セミナーを見ていないISが上から読めば掛け始められる4画面構成。①セミナーの中身(数字カード4枚、話の順番6章、言及と推奨と引用の3区分、これまでのSEOとの比較、当日の質疑2問と架電での使いどころ、用語8つ)②ENSORでできること(機能9つを、何をするか、消える作業、相手に残るもの、で整理。立場別の言い換え3つ)③架電前の準備(1社3分目安の7手順。質問文の穴埋め枠、ChatGPTの一時チャットで調べる、3行メモ)④スクリプト(全体の流れ図、Step02は調べた結果で3タブ、Step03の1問で3分岐、各分岐は当てる→刺す→締め→YESのアポ打診とNOの横移動。下部にアウト返し8本、数字、言わないこと)。キー操作は1〜3で分岐、O N X でドロワー。見た目は掘り起こしv5.1の架電画面に合わせた。v0.1(ensor-is-seminar-aio-talk-v01.html)はスクリプトのみの版で、このv0.2が置き換え。ローカルは ENSOR/IS/トークスクリプト/セミナー/",
+  },
+  {
     id: "seminar-funnel-20260914",
     title: "セミナー集客からアポまで 2026年1月から9月",
     url: "https://storage.cloud.google.com/n8n_file_upload/seminar-funnel-2026-09-14.html",
