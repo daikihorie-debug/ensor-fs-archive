@@ -3,6 +3,15 @@
 // 旧版を更新版で置き換えた場合は、旧版側に supersededBy: "<新版id>" を付ける。
 window.REPORTS = [
   {
+    id: "fs-hearing-map-4axes-20261014",
+    title: "FSヒアリング順序マップ v1（4軸・分岐つき）",
+    url: "https://storage.cloud.google.com/n8n_file_upload/fs-hearing-map-4axes-20261014.html",
+    date: "2026-10-14",
+    project: "ENSOR / FS",
+    filename: "fs-hearing-map-4axes-20261014.html",
+    note: "初回商談で何をどの順で聞き、答えで次にどこへ進むかの1枚。入口5問で軸を決め、クリエイティブ・LP・データ分析・広告運用の4軸を工程順のカードと分岐表で置き、損失への引き上げと決裁の問いで締める。和紙地と明朝、朱の差し色。ローカルは 30_Sales/04_ナレッジ/261014_2_FSヒアリング順序マップ_4軸分岐.html（正本は同名.md）。社内限定",
+  },
+  {
     id: "fs-hearing-map-sorachi-tanpan-20261015",
     title: "FSヒアリング地図 空知単板工業 事前版",
     url: "https://storage.cloud.google.com/n8n_file_upload/fs-hearing-map-sorachi-tanpan-20261015.html",
